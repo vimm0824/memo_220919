@@ -1,4 +1,6 @@
 @charset "UTF-8";
 header {height:100px;}
+.logo {color:#000;}
+.logo:hover {color:#000; text-decoration: none;}
 .contents {min-height:500px;}
 footer {height:100px;}
