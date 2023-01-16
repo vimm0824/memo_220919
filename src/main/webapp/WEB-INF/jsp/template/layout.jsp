@@ -20,7 +20,7 @@
 </head>
 <body>
 	<div id="wrap">
-		<header class="bg-info">
+		<header class="bg-info col-12">
 			<jsp:include page="../include/header.jsp" />
 		</header>
 		<section class="contents">

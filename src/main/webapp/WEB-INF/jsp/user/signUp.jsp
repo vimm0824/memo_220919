@@ -3,7 +3,7 @@
 <form id="signUpForm" method="post" action="/user/sign_up">
 	<div class="container col-5 pt-4">
 	<h1>회원가입</h1>
-		<table class="table border text-center">
+		<table class="table border text-center mt-4">
 			<tr>
 				<td class="border">아이디</td>
 				<td>
