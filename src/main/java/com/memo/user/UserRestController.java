@@ -13,7 +13,6 @@ import com.memo.common.EncryptUtils;
 import com.memo.user.bo.UserBO;
 import com.memo.user.model.User;
 
-import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
 @RequestMapping("user")

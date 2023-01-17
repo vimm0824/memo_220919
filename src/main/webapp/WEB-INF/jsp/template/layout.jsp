@@ -23,7 +23,7 @@
 		<header class="bg-info col-12">
 			<jsp:include page="../include/header.jsp" />
 		</header>
-		<section class="contents">
+		<section class="contents my-5">
 			<jsp:include page="../${viewName}.jsp" />
 		</section>
 		<footer class="bg-info">
