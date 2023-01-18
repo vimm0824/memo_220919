@@ -90,7 +90,7 @@
 					}
 				}
 				, error:function(e) {
-					alert("ajax error!!!" + e);
+					alert("ajax error!!!");
 				}
 			});
 		});
