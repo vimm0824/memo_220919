@@ -1,7 +1,5 @@
 package com.memo.post;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -65,8 +63,9 @@ public class PostController {
 		}
 		
 		// DB select by - userId, postId
+		Post post = postBO.getPostByPostidUserId(postId, userId);
 		
-		
+		model.addAttribute("post", post);
 		model.addAttribute("viewName", "post/postDetail");
 		return "template/layout";
 	}
