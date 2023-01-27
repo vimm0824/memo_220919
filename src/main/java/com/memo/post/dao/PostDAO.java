@@ -1,7 +1,6 @@
 package com.memo.post.dao;
 
 import java.util.List;
-import java.util.Map;
 
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
@@ -18,7 +17,16 @@ public interface PostDAO {
 			@Param("imagePath") String imagePath
 			);
 	
-	public List<Post> selectPostListByUserId(int userId);
+	public List<Post> selectPostListByUserId(
+			@Param("userId") int userId,
+			@Param("direction") String direction,
+			@Param("standardId") Integer standardId,
+			@Param("limit") int limit			
+			);
+	
+	public int selectPostIdByUserIdSort(
+			@Param("userId") int userId, 
+			@Param("sort") String sort);
 	
 	public Post selecetPostByPostidUserId(
 			@Param("postId") int postId,
